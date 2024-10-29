@@ -4,7 +4,7 @@ import { Layers } from "@craftjs/layers";
 
 import * as UserComponents from "../components/user";
 
-import { Toolbox } from "../components/ui/Toolbox";
+import Toolbox  from "../components/ui/Toolbox";
 import { Panel } from "../components/ui/Panel";
 import { SettingsPanel } from "../components/ui/SettingsPanel";
 import { TopBar } from "../components/ui/TopBar";

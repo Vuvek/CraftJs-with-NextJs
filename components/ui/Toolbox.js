@@ -51,7 +51,9 @@ const ToolboxButton = React.forwardRef(({ icon, text }, ref) => (
   </div>
 ));
 
-export const Toolbox = () => {
+ToolboxButton.displayName = 'ToolboxButton';
+
+const Toolbox = () => {
   const { actions, connectors, query, canUndo, canRedo } = useEditor();
 
   return (
@@ -151,3 +153,6 @@ export const Toolbox = () => {
     </Panel>
   );
 };
+
+Toolbox.displayName = 'Toolbox';
+export default Toolbox;

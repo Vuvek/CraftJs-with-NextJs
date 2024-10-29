@@ -33,7 +33,7 @@ export const Rows = ({ numberOfRows = 2, gap, children }) => {
     >
       {children ??
         [...Array(numberOfRows).keys()].map((id) => (
-          <Element is={Row} id={`row-${id}`} canvas />
+          <Element key={`row-${id}`} is={Row} id={`row-${id}`} canvas />
         ))}
     </Container>
   );

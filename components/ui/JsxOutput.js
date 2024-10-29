@@ -85,7 +85,7 @@ const transformToJSX = (node, getNode, level = 1, formatted) => {
         <>
           <span className="text-red-400">{prop}</span>
           <span>=</span>
-          <span className="text-lime-600">"{node.data.props[prop]}"</span>
+          <span className="text-lime-600">&quot;{node.data.props[prop]}&quot;</span>
         </>
       ) : (
         `${prop}="${node.data.props[prop]}"`
